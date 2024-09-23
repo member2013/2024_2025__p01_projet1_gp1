@@ -1,2 +1,2 @@
-# 2024_2025_p01_projey_gp1
+# 2024_2025__p01_projet1_gp1
 projet 1
