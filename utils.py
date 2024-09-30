@@ -1,5 +1,4 @@
 from data import *
-from main import *
 
 
 bin_number_valid_chars = ["0", "1"]
