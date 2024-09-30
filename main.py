@@ -12,6 +12,9 @@ def transform  ():
     target_number = \
         bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base)
 
+
 transform ()
 
 assert bin_dec_hex__to__bin_dec_hex ("101", 2, 10) == "5"
+
+# ask_for_the_init_number
