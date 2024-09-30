@@ -29,7 +29,6 @@ def ask_for_the_init_number ():
     return init_number
 
 
-
 def check_char_base_validity (char):
     return char in hex_base_valid_chars
  
