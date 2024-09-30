@@ -1,7 +1,10 @@
+def check_char_number_validity (char):
+    return char in hex_valid_chars
+ 
 def is_a_valid_number (number):
     i = 0
     is_a_valid_char = True
-    while is_a_valid_char == True:
+    while is_a_valid_char == True and i<= len(number) - 1 :
         is_a_valid_char = check_char_number_validity (number[i])
         i = i+1
     return is_a_valid_char
