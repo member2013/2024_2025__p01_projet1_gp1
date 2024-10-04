@@ -7,6 +7,10 @@ def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base):
     return target_number
 
 
+def ask_for_the_target_base () :
+    pass
+
+
 def transform  ():
     init_number = ask_for_the_init_number ()
     init_base = ask_for_the_init_number ()
@@ -19,4 +23,4 @@ transform ()
 
 assert bin_dec_hex__to__bin_dec_hex ("101", 2, 10) == "5"
 
-# ask_for_the_init_number 
+# ask_for_the_init_number 144
