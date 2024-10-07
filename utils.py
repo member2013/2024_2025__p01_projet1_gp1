@@ -1,4 +1,5 @@
 from data import *
+from main import *
 
 def check_char_number_validity (char):
     return char in hex_number_valid_chars
