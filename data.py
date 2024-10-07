@@ -50,3 +50,5 @@ valid_base_strings = ["2", "10", "16"]
 #     from_hex_to_bin = SALOME 
 #     from_dec_to_hex = TIMEO 
 #     from_hex_to_dec = TIMEO
+
+

@@ -32,3 +32,21 @@ def ask_for_the_target_base ():
     while not (is_a_valid_base (target_base)) == True:
         target_base = input (ask_again_for_the_target_base_text)
     return target_base
+
+def from_bin_to_dec (n, b):
+    dec = 0
+    for i in range (len(n)):
+        dec = dec + n [len(n) - i - 1] * b ** i
+        return dec 
+    
+def bin_to_dec (n, b):
+    return from_bin_to_dec (n, 2)
+
+# def hec_to_bin (n, b):
+#     dec = 0
+#     for i in range (len(n)):
+#         dec = dec + n [len(n) - i - 1] * b ** i
+#         return bin
+     
+# # def dec_to_bin (n):
+#     return from_dec_to_bin (n, 10)
