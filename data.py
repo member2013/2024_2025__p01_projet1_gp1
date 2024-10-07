@@ -2,9 +2,9 @@ ask_for_the_init_number_text = "Entrez le nombre : "
 
 ask_again_for_the_init_number_text = "Entrez le nombre correct : "
 
-ask_for_the_init_base_text = "Entrez la base : "
-ask_again_for_the_init_base_text = \
-    "Entrez la base correctement !" \
+ask_for_the_init_base_text = "Entrez la base de départ : "
+
+ask_again_for_the_init_base_text =  "Entrez la base correctement !" \
     + "\nSi vous souhaitez du binaire, tapez 2" \
     + "\nSi vous souhaitez du décimal, tapez 10" \
     + "\nSi vous souhaitez du hexadécimale, tapez 16  :  "
@@ -21,3 +21,12 @@ hex_number_valid_chars = \
   + ["a", "b", "c", "d", "e", "f"]
 
 valid_base_strings = ["2", "10", "16"]
+
+
+# def calculus_to_change_base ():
+#     from_bin_to_dec = 
+#     from_dec_to_bin =
+#     from_bin_to_hex =
+#     from_hex_to_bin =
+#     from_dec_to_hex =
+#     from_hex_to_dec = 
