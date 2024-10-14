@@ -1,10 +1,8 @@
 from utils import *
 
-
-def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base):
-    pass
-    target_number = None
-    return target_number
+# def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base):
+#     target_number = None
+#     return target_number
 
 
 def transform  ():
@@ -27,6 +25,12 @@ def hex_to_bin (number):
       number = hex_to_dec (number)
       number = dec_to_bin (number)
       return number
+
+def bin_to_hex (number) :
+       number = bin_to_dec (number)
+       number = dec_to_hex (number)
+       return number
+
 
 def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base):
     if init_base == 2 and target_base == 2:
