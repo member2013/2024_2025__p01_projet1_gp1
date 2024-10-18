@@ -31,6 +31,8 @@ def bin_to_hex (number) :
        number = dec_to_hex (number)
        return number
 
+def bin_to_dec (number) :
+       pass
 
 def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base):
     if init_base == 2 and target_base == 2:
