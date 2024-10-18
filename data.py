@@ -49,6 +49,6 @@ valid_base_strings = ["2", "10", "16"]
 #     from_bin_to_hex = TIMEO
 #     from_hex_to_bin = CASSANDRE
 #     from_dec_to_hex = SALOME
-#     from_hex_to_dec = TIMEO
+#     from_hex_to_dec = TIMEO - FAIT
 
 
