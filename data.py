@@ -45,10 +45,10 @@ valid_base_strings = ["2", "10", "16"]
 
 # def calculus_to_change_base ():
 #     from_bin_to_dec = CASSANDRE
-#     from_dec_to_bin = CASSANDRE
-#     from_bin_to_hex = SALOME
-#     from_hex_to_bin = SALOME 
-#     from_dec_to_hex = TIMEO 
+#     from_dec_to_bin = SALOME
+#     from_bin_to_hex = TIMEO
+#     from_hex_to_bin = CASSANDRE
+#     from_dec_to_hex = SALOME
 #     from_hex_to_dec = TIMEO
 
 
