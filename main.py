@@ -42,6 +42,7 @@ def bin_to_dec (init_number) :
     return result
 
 def dec_to_bin (init_number) :
+    init_number = int (init_number)
     restes = ""
     quotient = init_number // 2
     reste = str (init_number % 2)
@@ -117,7 +118,7 @@ def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base):
     if init_base == 16 and target_base == 16:
             return hex_to_hex (init_number)           
     
-    
+
 
         
 
