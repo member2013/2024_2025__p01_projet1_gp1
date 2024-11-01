@@ -73,10 +73,6 @@ def hex_to_dec (init_number) :
     
     return decimal
 
-# on print
-hexadecimal_input = input("Entrez un nombre hexadécimal : ")
-decimal_output = hex_to_dec(hexadecimal_input)
-print(f"Le nombre en décimal est : {decimal_output}")
 
 def dec_to_hex (init_number) :
     if init_number == 0 :
