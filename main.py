@@ -32,29 +32,14 @@ def bin_to_hex (init_number) :
        return init_number
 
 def bin_to_dec (init_number) :
-       pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    result = 0
+    exposant = len(init_number) - 1
+    for char in init_number:
+        if char == '1':
+            result += 2 ** exposant
+        exposant -= 1
+    
+    return result
 
 def dec_to_bin (init_number) :
     restes = ""
