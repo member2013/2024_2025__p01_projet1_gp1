@@ -69,6 +69,24 @@ def bin_to_dec(init_number):
         exposant -= 1
     return result
 
+def hex_to_dec(init_number):
+    decimal = 0
+    puissance = 0
+    for i in range(len(init_number) - 1, -1, -1):
+        chiffre = init_number[i]
+        if '0' <= chiffre <= '9':
+            valeur = ord(chiffre) - ord('0')
+        elif 'A' <= chiffre <= 'F':
+            valeur = ord(chiffre) - ord('A') + 10
+        elif 'a' <= chiffre <= 'f':
+            valeur = ord(chiffre) - ord('a') + 10
+        else:
+            print("Erreur")
+
+        decimal += valeur * (16 ** puissance)
+        puissance += 1
+    return decimal
+
 def dec_to_bin(init_number):
     init_number = int(init_number)
     if init_number == 0:
@@ -79,21 +97,7 @@ def dec_to_bin(init_number):
         init_number //= 2
     return restes
 
-def hex_to_dec(init_number):
-    decimal = 0
-    puissance = 0
-    for chiffre in reversed(init_number):
-        if '0' <= chiffre <= '9':
-            valeur = ord(chiffre) - ord('0')
-        elif 'A' <= chiffre <= 'F':
-            valeur = ord(chiffre) - ord('A') + 10
-        elif 'a' <= chiffre <= 'f':
-            valeur = ord(chiffre) - ord('a') + 10
-        else:
-            raise ValueError("Caractère hexadécimal invalide")
-        decimal += valeur * (16 ** puissance)
-        puissance += 1
-    return decimal
+
 
 def dec_to_hex(init_number):
     init_number = int(init_number)
