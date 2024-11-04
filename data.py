@@ -40,13 +40,4 @@ hex_number_valid_chars = \
   + ["A", "B", "C", "D", "E", "F"] \
   + ["a", "b", "c", "d", "e", "f"]
 
-valid_base_strings = ["2", "10", "16"]
-
-
-# def calculus_to_change_base ():
-#     bin_to_dec = CASSANDRE
-#     dec_to_bin = SALOME - FAIT
-#     bin_to_hex = TIMEO
-#     hex_to_bin = CASSANDRE
-#     dec_to_hex = SALOME
-#     hex_to_dec = TIMEO
+valid_base_strings = ["2", "10", "16"] 

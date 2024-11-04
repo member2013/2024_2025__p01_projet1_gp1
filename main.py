@@ -43,17 +43,6 @@ def bin_dec_hex__to__bin_dec_hex(init_number, init_base, target_base):
 
 def transform():
     
-    '''
-    salut
-    '''
-    init_number = ask_for_init_number()
-    init_base = ask_for_init_base()
-    target_base = ask_for_target_base()
-    
-    final_number = bin_dec_hex__to__bin_dec_hex(init_number, init_base, target_base)
-    
-    print(f"Le nombre converti est : {final_number}")
-
 def bin_to_bin(init_number):
     return init_number
 
@@ -123,4 +112,17 @@ def dec_to_hex(init_number):
         quotient //= 16
     return restes        
 
-transform()
+def transform():
+    
+    '''
+    salut
+    '''
+    init_number = ask_for_init_number()
+    init_base = ask_for_init_base()
+    target_base = ask_for_target_base()
+    
+    final_number = bin_dec_hex__to__bin_dec_hex(init_number, init_base, target_base)
+    print (f"Le nombre converti est : {final_number}")
+
+if __name__ == "__main__":
+    transform()
