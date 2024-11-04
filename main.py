@@ -1,6 +1,9 @@
 from utils import *  # Assurez-vous que utils.py contient les bonnes fonctions
 
 def bin_dec_hex__to__bin_dec_hex(init_number, init_base, target_base):
+    '''
+      cette fonction permet 
+    '''
 
     init_base = int(init_base)
     target_base = int(target_base)
