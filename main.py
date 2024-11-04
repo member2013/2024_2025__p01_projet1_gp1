@@ -1,8 +1,12 @@
 from utils import *  # Assurez-vous que utils.py contient les bonnes fonctions
 
 def bin_dec_hex__to__bin_dec_hex(init_number, init_base, target_base):
+    
     '''
       cette fonction permet 
+      Cette fonction prend en compte le nombre d'entrée, 
+      la base de départ et la base souhaitée. Elle va donc lancée la 
+      fontion ci-dessous correspondante.
     '''
 
     init_base = int(init_base)
@@ -38,6 +42,10 @@ def bin_dec_hex__to__bin_dec_hex(init_number, init_base, target_base):
     return None
 
 def transform():
+    
+    '''
+    salut
+    '''
     init_number = ask_for_init_number()
     init_base = ask_for_init_base()
     target_base = ask_for_target_base()
