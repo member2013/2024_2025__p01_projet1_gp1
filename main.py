@@ -122,7 +122,8 @@ def dec_to_hex(init_number):
 def transform():
     
     '''
-    salut
+    Cette fonction demande les valeurs de base, de nombre et de base cible à l'utilisateur
+    puis effectue la conversion et affiche le résultat.
     '''
     init_number = ask_for_init_number()
     init_base = ask_for_init_base()
