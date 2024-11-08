@@ -40,4 +40,4 @@ hex_number_valid_chars = \
   + ["A", "B", "C", "D", "E", "F"] \
   + ["a", "b", "c", "d", "e", "f"]
 
-valid_base_strings = ["2", "10", "16"] 
+valid_base_strings = ["2", "10", "16"]  

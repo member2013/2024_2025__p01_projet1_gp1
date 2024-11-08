@@ -3,7 +3,6 @@ from utils import *  # Assurez-vous que utils.py contient les bonnes fonctions
 def bin_dec_hex__to__bin_dec_hex(init_number, init_base, target_base):
     
     '''
-      cette fonction permet 
       Cette fonction prend en compte le nombre d'entrée, 
       la base de départ et la base souhaitée. Elle va donc lancée la 
       fontion ci-dessous correspondante.
@@ -41,8 +40,6 @@ def bin_dec_hex__to__bin_dec_hex(init_number, init_base, target_base):
     
     return None
 
-def transform():
-    
 def bin_to_bin(init_number):
     return init_number
 
@@ -125,4 +122,4 @@ def transform():
     print (f"Le nombre converti est : {final_number}")
 
 if __name__ == "__main__":
-    transform()
+    transform() 
