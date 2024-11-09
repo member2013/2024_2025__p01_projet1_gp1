@@ -85,29 +85,30 @@ def hex_to_dec(init_number):
     return decimal
 
 def dec_to_bin(init_number):
-    init_number = int(init_number)
-    if init_number == 0:
+    init_number = int(init_number)              # pour convertir init_number en entier.
+    if init_number == 0:                        # car 0 en base 10 est aussi 0 en base 2.
         return "0"
-    restes = ""
-    while init_number > 0:
-        restes = str(init_number % 2) + restes
-        init_number //= 2
-    return restes
-
-
+    restes = ""                                 # chaîne vide qui accumule les chiffres binaires formant le résultat final.
+    while init_number > 0:                      # à chaque itération :
+        restes = str(init_number % 2) + restes  # on calcule le reste de la division de init_number par 2, qui donne le chiffre binaire le plus à droite.
+#                                                 Le reste est converti en chaîne (str) et ajouté au début de la chaîne restes (pour avoir les chiffres dans le bon ordre).
+        init_number //= 2                       # init_number est ensuite mis à jour en le divisant par 2.
+    return restes                               # la fonction retourne la chaîne restes, qui contient le nombre en base 2.
 
 def dec_to_hex(init_number):
-    init_number = int(init_number)
-    if init_number == 0:
+    init_number = int(init_number)          # pour convertir init_number en entier.
+    if init_number == 0:                    # car 0 en base 10 est aussi 0 en base 16.
         return "0"
-    hex_digits = "0123456789ABCDEF"
-    restes = ""
-    quotient = init_number
-    while quotient > 0:
-        reste = quotient % 16
-        restes = hex_digits[reste] + restes
-        quotient //= 16
-    return restes        
+    hex_digits = "0123456789ABCDEF"         # hex_digits contient des caractères hexadécimaux (valeurs de 0 à 15),
+#                                           # => permet la conversion des restes en leurs représentations hexadécimales.
+    restes = ""                             # chaîne vide qui accumule les chiffres hexadécimaux formant le résultat final.
+    quotient = init_number                  # quotient est initialisé avec la valeur de init_number car il sera modifié dans la boucle.
+    while quotient > 0:                     # à chaque itération :
+        reste = quotient % 16               # on calcule le reste de la division de quotient par 16
+        restes = hex_digits[reste] + restes # reste: utilisé comme indice pour obtenir le caractère héxadécimal correspondant dans hex_digits
+#                                             et ce caractère est ajouté au début de la chaine restes (pour avoir les chiffres dans le bon ordre)
+        quotient //= 16                     # pour mettre le quotient à jour en le divisant par 16 pour préparer l'itération suivante.
+    return restes                           # la fonction retourne la chaîne restes, qui contient le nombre en base 16.
 
 # def check_compatibility_number_base (init_number, init_base):
 #     if init_base == "2":
