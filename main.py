@@ -67,22 +67,20 @@ def bin_to_dec(init_number):
     return result
 
 def hex_to_dec(init_number):
-    decimal = 0
-    puissance = 0
-    for i in range(len(init_number) - 1, -1, -1):
-        chiffre = init_number[i]
-        if '0' <= chiffre <= '9':
-            valeur = ord(chiffre) - ord('0')
-        elif 'A' <= chiffre <= 'F':
-            valeur = ord(chiffre) - ord('A') + 10
-        elif 'a' <= chiffre <= 'f':
-            valeur = ord(chiffre) - ord('a') + 10
-        else:
-            print("Erreur")
+    decimal_value = 0
+    hex_liste = {
+        '0': 0, '1': 1, '2': 2, '3': 3, '4': 4,
+        '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
+        'A': 10, 'B': 11, 'C': 12, 'D': 13, 'E': 14, 'F': 15
+    }
+    for caracter in init_number:
+        if caracter not in hex_liste:
+            print("Erreur : Le nombre entré n'est pas valide en base 16.")
 
-        decimal += valeur * (16 ** puissance)
-        puissance += 1
-    return decimal
+        decimal_value = decimal_value * 16 + hex_liste[caracter]
+
+    return decimal_value
+
 
 def dec_to_bin(init_number):
     init_number = int(init_number)              # pour convertir init_number en entier.
