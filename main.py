@@ -67,19 +67,24 @@ def bin_to_dec(init_number):
     return result
 
 def hex_to_dec(init_number):
-    decimal_value = 0                                                       # Initialiser la valeur décimale à 0
+    decimal_value = 0                                                        # Initialiser la valeur décimale à 0
     hex_liste = {
         '0': 0, '1': 1, '2': 2, '3': 3, '4': 4,
         '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
         'A': 10, 'B': 11, 'C': 12, 'D': 13, 'E': 14, 'F': 15
-    }                                                                      # Liste qui associe chaque caractère hexadécimal à sa valeur en base 10
-    for caracter in init_number:                                           # Parcourir chaque caractère du nombre initial en base 16
+    }                                                                       # Liste qui associe chaque caractère hexadécimal
+#                                                                             à sa valeur en base 10
+
+    for caracter in init_number:                                            # Parcourir chaque caractère du nombre initial en base 16
         if caracter not in hex_liste:
-            print("Erreur : Le nombre entré n'est pas valide en base 16.") # Vérifier si le caractère est valide en vérifiant qu'il est bien présent dans la liste hex_liste
+            print("Erreur : Le nombre entré n'est pas valide en base 16.")  # Vérifier si le caractère est valide en vérifiant 
+#                                                                             qu'il est bien présent dans la liste hex_liste
 
-        decimal_value = decimal_value * 16 + hex_liste[caracter]           # Mettre à jour la valeur décimale initialisée à 0 en multipliant par 16 et en ajoutant la valeur en base 10 du nombre initial trouvé la liste hex_liste
+        decimal_value = decimal_value * 16 + hex_liste[caracter]            # Mettre à jour la valeur décimale initialisée à 0 
+#                                                                             en multipliant par 16 et en ajoutant la valeur en base 10 
+#                                                                             du nombre initial trouvé la liste hex_liste
 
-    return decimal_value                                                   # Retourner la valeur décimale actualisée
+    return decimal_value                                                    # Retourner la valeur décimale actualisée
 
 
 def dec_to_bin(init_number):
