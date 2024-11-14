@@ -52,12 +52,12 @@ def bin_to_hex(init_number):
 
 def bin_to_dec(init_number):
     result = 0
-    exposant = len(init_number) - 1
-    for char in init_number:
-        if char == '1':
-            result += 2 ** exposant
-        exposant -= 1
-    return result
+    exposant = len(init_number) - 1    # Calcule l'exposant initial, correspondant à la position du bit le plus à gauche (plus significatif).
+    for char in init_number:           
+        if char == '1':                # Vérifie si le bit actuel est '1'.
+            result += 2 ** exposant    # Si oui, ajoute la valeur de 2 élevé à `exposant` à `result`
+        exposant -= 1                  # Réduit l'exposant de 1 pour passer au bit suivant, vers la droite.
+    return result                      # Renvoie la valeur finale de "init_number" 
 
 def hex_to_dec(init_number):
     decimal_value = 0
