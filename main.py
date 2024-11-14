@@ -116,12 +116,37 @@ def dec_to_hex(init_number):
 # def check_compatibility_number_base (init_number, init_base):
 #     if init_base == "2":
 #         for n in init_number:
-#             if n != bin_number_valid_chars:
+#             if n not in bin_number_valid_chars:
 #                 print (error_in_init_base)
 #     elif init_base == "10":
 #         for n in init_number:
-#             if n != dec_number_valid_chars:
+#             if n not in dec_number_valid_chars:
 #                 print (error_in_init_base)
+#     elif init_base == "16":
+#         for n in init_number:
+#             if n not in hex_number_valid_chars:
+#                 print (error_in_init_base)
+
+def check_compatibility_number_base(init_number, init_base):
+    while True:
+        if init_base == "2":
+            if all(char in bin_number_valid_chars for char in init_number):
+                break
+            else:
+                print(error_in_init_base)
+                init_number = ask_for_init_number()
+        elif init_base == "10":
+            if all(char in dec_number_valid_chars for char in init_number):
+                break
+            else:
+                print(error_in_init_base)
+                init_number = ask_for_init_number()
+        elif init_base == "16":
+            if all(char in hex_number_valid_chars for char in init_number):
+                break
+            else:
+                print(error_in_init_base)
+                init_number = ask_for_init_number()
 
 def transform():
     
@@ -131,8 +156,10 @@ def transform():
     '''
     init_number = ask_for_init_number()
     init_base = ask_for_init_base()
+    check_compatibility_number_base (init_number, init_base)
+    init_number = int(init_number)
     target_base = ask_for_target_base()
-    # check_compatibility_number_base
+   
     
     final_number = bin_dec_hex__to__bin_dec_hex(init_number, init_base, target_base)
     print (f"Le nombre converti est : {final_number}")
