@@ -43,4 +43,4 @@ hex_number_valid_chars = \
 valid_base_strings = ["2", "10", "16"]  
 
 error_in_init_base = "La base d'entrée ne correspond pas au chiffre de départ."\
-    +"/nVeuillez recommencer. "
+    +"\nVeuillez recommencer. "
